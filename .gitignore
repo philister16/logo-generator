@@ -1,0 +1,106 @@
+# Environment variables
+.env
+
+# Deployment script (if you decide to exclude it)
+# deploy.sh
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Distribution directories
+dist/
+build/
+
+# Temporary files
+tmp/
+temp/
+
+# Debug files
+debug/
+
+# Cache files
+.cache/
+
+# Config files
+*.config.js
+*.config.json
+
+# For the ITI Logo Generator project
+# Ignoring generated logos (if they are saved locally)
+generated_logos/
+
+# Backup files
+*.bak
+
+# If you're using any task runners or build tools, you might want to ignore their files
+# Gulp
+gulpfile.js
+# Grunt
+Gruntfile.js
+# Webpack
+webpack.config.js
+
+# If you're using any testing frameworks, you might want to ignore coverage reports
+coverage/
+
+# If you're using any documentation generators, you might want to ignore generated docs
+docs/
+
+# Ignore any local SSL certificates
+*.pem
+*.key
+*.crt
+
+# Ignore any local database files
+*.sqlite
+*.db
+
+# Ignore any compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Ignore packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# If you're using TypeScript
+*.tsbuildinfo
+
+# Ignore .env files for different environments, if you're using them
+.env.local
+.env.development
+.env.test
+.env.production

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>ITI Logo Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>ITI Logo Generator</h1>
+        <p class="manual-notice">Before using this tool, please consult the <a href="media/ITI_CDM.pdf"
+                target="_blank">ITI Corporate Design Manual</a>.</p>
+        <div class="input-group">
+            <label for="line1">Line 1:</label>
+            <input type="text" id="line1" value="International Team" maxlength="20">
+            <span id="charCount1" class="char-count">0 / 20</span>
+        </div>
+        <div class="input-group">
+            <label for="line2">Line 2:</label>
+            <input type="text" id="line2" value="for Implantology" maxlength="20">
+            <span id="charCount2" class="char-count">0 / 20</span>
+        </div>
+        <div class="input-group">
+            <label for="line3">Line 3:</label>
+            <input type="text" id="line3" value="" maxlength="20">
+            <span id="charCount3" class="char-count">0 / 20</span>
+        </div>
+        <div class="input-group">
+            <label for="color1">Color 1:</label>
+            <select id="color1">
+                <option value="#000000">Black</option>
+                <option value="#FFFFFF">White</option>
+                <option value="#ad2525">Red</option>
+                <option value="#ffd85a">Yellow</option>
+                <option value="#4780d1">Blue</option>
+                <option value="#2e7c41">Green</option>
+                <option value="#e08032">Orange</option>
+                <option value="#474444">Section Black</option>
+                <option value="#e9e7e6">Section White</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="color2">Color 2:</label>
+            <select id="color2">
+                <option value="#000000">Black</option>
+                <option value="#FFFFFF">White</option>
+                <option value="#ad2525">Red</option>
+                <option value="#ffd85a">Yellow</option>
+                <option value="#4780d1">Blue</option>
+                <option value="#2e7c41">Green</option>
+                <option value="#e08032">Orange</option>
+                <option value="#474444">Section Black</option>
+                <option value="#e9e7e6">Section White</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="color3">Color 3:</label>
+            <select id="color3">
+                <option value="#000000">Black</option>
+                <option value="#FFFFFF">White</option>
+                <option value="#ad2525">Red</option>
+                <option value="#ffd85a">Yellow</option>
+                <option value="#4780d1">Blue</option>
+                <option value="#2e7c41">Green</option>
+                <option value="#e08032">Orange</option>
+                <option value="#474444">Section Black</option>
+                <option value="#e9e7e6">Section White</option>
+            </select>
+        </div>
+        <div id="preview" class="preview"></div>
+        <div class="button-groups">
+            <div class="button-group">
+                <h3>Download SVG</h3>
+                <button id="downloadSvg">Dark Version</button>
+                <button id="downloadSvgLight">Light Version</button>
+            </div>
+            <div class="button-group">
+                <h3>Download PNG</h3>
+                <button id="downloadPng">Dark Version</button>
+                <button id="downloadPngLight">Light Version</button>
+            </div>
+        </div>
+    </div>
+    <footer class="copyright">
+        &copy; <span id="currentYear"></span> ITI International Team for Implantology, <a href="https://iti.org"
+            target="_blank">ITI Foundation</a>. All rights reserved. The ITI logo is a registered trademark of the ITI
+        Foundation. Unauthorized use is strictly prohibited.
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
