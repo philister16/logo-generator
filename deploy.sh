@@ -3,12 +3,20 @@
 # Ensure the script exits if any command fails
 set -e
 
+# Source the .env file if it exists
+if [ -f .env ]; then
+    source .env
+else
+    echo "Warning: .env file not found. Make sure all required environment variables are set."
+fi
+
 # Function to check if required environment variables are set
 check_env_vars() {
     local prefix=$1
     local vars=("USER" "HOST" "DIR")
     for var in "${vars[@]}"; do
-        if [ -z "${!prefix$var}" ]; then
+        eval value=\$${prefix}${var}
+        if [ -z "$value" ]; then
             echo "Error: ${prefix}${var} is not set. Please set all required environment variables."
             exit 1
         fi
@@ -28,6 +36,7 @@ deploy() {
         --exclude '.git/' \
         --exclude '.gitignore' \
         --exclude 'deploy.sh' \
+        --exclude '.env' \
         "${LOCAL_DIR:-.}" "$USER@$HOST:$DIR"
 
     # Set permissions on the remote server

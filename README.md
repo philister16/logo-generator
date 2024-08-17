@@ -38,7 +38,7 @@ This README provides instructions for deploying the ITI Logo Generator website t
    LOCAL_DIR="./path/to/local/directory"
    ```
 
-   Note: `LOCAL_DIR` should be the path to your project's root directory, relative to where the `deploy.sh` script is located. If the script is in the project root, you can use `LOCAL_DIR="./"`.
+   Note: `LOCAL_DIR` should be the path to your project's root directory, relative to where the `deploy.sh` script is located. If the script is in the project root, you can use `LOCAL_DIR="./"`. Notice as well that to only copy the contents of the local directory add a trailing slash, for example `LOCAL_DIR="./src/"` to copy the contents of the src directory.
 
 5. Add `.env` to your `.gitignore` file to prevent it from being committed to the repository:
    ```
