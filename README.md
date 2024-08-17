@@ -1,4 +1,4 @@
-# ITI Logo Generator Deployment
+# ITI Logo Generator
 
 This README provides instructions for deploying the ITI Logo Generator website to test and production environments.
 
